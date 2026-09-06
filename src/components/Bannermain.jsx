@@ -1,22 +1,15 @@
-// import { adminDB } from "../lib/firebaseAdmin";
 import BannerSlider from "./client/BannerSlider";
 
 export default async function Bannermain() {
-  // const docSnap = await adminDB.doc("main-banner/banner").get();
-  // const data = docSnap.data();
-
-  // if (!data) return null;
-
   return (
     <BannerSlider
-      images={[
-        "/fum-img/perf1.jpg",
-        "/fum-img/ban6.png",
-        "/fum-img/ban1.jpg",
-        "/fum-img/perf4.jpg",
+      videoUrl="https://res.cloudinary.com/dr1jqpozn/video/upload/v1788680664/bannervd.mp4"
+        images={[
+        "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
+        "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban3.jpg",
+        "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban2.jpg",
       ]}
-      // title={data.title}
-      // subtitle={data.subtitle}
     />
   );
 }
+

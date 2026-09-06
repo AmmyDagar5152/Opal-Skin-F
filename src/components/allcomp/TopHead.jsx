@@ -71,7 +71,7 @@ export default function TopHead() {
           </div>
 
           <Link href="/">
-            <h1 className={`  ${isScrolled ? " text-black" : ""} ${pathname === "/" ? "" :  "text-black"} desc-font tracking-widest md:text-4xl text-3xl `}>OPAL MORSEL</h1>
+            <h1 className={`  ${isScrolled ? " text-black" : "text-black"} ${pathname === "/" ? "" :  "text-black"} desc-font tracking-widest md:text-4xl text-3xl `}>OPAL MORSEL</h1>
 
           </Link>
 

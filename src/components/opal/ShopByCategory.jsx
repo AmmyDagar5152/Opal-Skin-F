@@ -1,59 +1,163 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const categories = [
   {
-    id: 1,
-    title: "Women",
-    slug: "women",
-    image: "/fum-img/bgslide6.png",
+    title: "Skin",
+    subtitle: "Elevated care for your daily skin ritual",
+    slug: "skin",
+    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
   },
   {
-    id: 2,
-    title: "Men",
-    slug: "men",
-    image: "/fum-img/bgslide2.png",
+    title: "Hair & Scalp",
+    subtitle: "Rooted in thoughtful scalp & hair care",
+    slug: "hair-scalp",
+    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban3.jpg",
   },
   {
-    id: 3,
-    title: "Opal Exclusive",
-    slug: "opalex",
-    image: "/fum-img/bgslide1.png",
+    title: "Lip Care",
+    subtitle: "Nourishment for softer, healthier-looking lips",
+    slug: "lip-care",
+    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
   },
   {
-    id: 4,
-    title: "Opal Luxe",
-    slug: "opalluxe",
-    image: "/fum-img/bgslide4.png",
+    title: "Rituals",
+    subtitle: "Masks, oils & treatments for elevated self-care",
+    slug: "rituals",
+    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban2.jpg",
   },
 ];
 
 export default function ShopByCategory() {
-  const router = useRouter();
-
   return (
-    <section className="w-full py-16 bg-white">
-      <h2 className="mb-12 text-center text-sm tracking-[0.3em] uppercase">
-        Shop by Category
-      </h2>
+    <section className="w-full bg-white py-16 md:py-24">
 
-      <div className="mx-auto grid max-w-7xl grid-cols-2 md:grid-cols-4 gap-8 px-6">
-        {categories.map((item) => (
-          <div
-            key={item.id}
-            onClick={() => router.push(`/collections/${item.slug}`)}
-            className="cursor-pointer text-center group"
+      {/* Heading */}
+      <div className="px-5 md:px-10 text-center mb-10 md:mb-14">
+
+        <p className="outfit text-[10px] md:text-xs tracking-[0.35em] uppercase text-neutral-500 mb-3">
+          Explore The Collection
+        </p>
+
+        <h2 className="desc-font text-3xl md:text-5xl tracking-wide text-neutral-900">
+          Shop by Category
+        </h2>
+
+      </div>
+
+      {/* Cards */}
+      <div
+        className="
+          flex
+          md:grid
+          md:grid-cols-2
+          lg:grid-cols-4
+          gap-4
+          md:gap-5
+          overflow-x-auto
+          md:overflow-visible
+          px-5
+          md:px-10
+          lg:px-14
+          pb-5
+          md:pb-0
+          snap-x
+          snap-mandatory
+          scrollbar-hide
+        "
+      >
+        {categories.map((category) => (
+          <Link
+            href={`/shop?category=${category.slug}`}
+            key={category.slug}
+            className="
+              group
+              relative
+              min-w-[78vw]
+              sm:min-w-[48vw]
+              md:min-w-0
+              aspect-[4/5]
+              overflow-hidden
+              snap-start
+            "
           >
-            <div className="relative mx-auto md:h-[400px] h-[220px] w-[170px] 
-            md:w-[300px] overflow-hidden flex items-end justify-center">
-              <Image src={item.image} alt={item.title} fill className="object-contain object-bottom translate-y-11 md:translate-y-30 
-               hover:scale-105 transition-transform duration-300" priority />
-            </div>
+            <Image
+              src={category.image}
+              alt={category.title}
+              fill
+              className="
+                object-cover
+                transition-transform
+                duration-1000
+                ease-out
+                group-hover:scale-105
+              "
+              sizes="
+                (max-width: 767px) 80vw,
+                (max-width: 1023px) 50vw,
+                25vw
+              "
+            />
 
-         <p className="mt-6 md:text-sm text-xs md:font-light outfit tracking-widest uppercase"> {item.title} </p>
-          </div>
+            {/* Gradient */}
+            <div
+              className="
+                absolute
+                inset-0
+                bg-gradient-to-t
+                from-black/60
+                via-black/10
+                to-transparent
+              "
+            />
+
+            {/* Content */}
+            <div
+              className="
+                absolute
+                inset-x-0
+                bottom-0
+                p-6
+                md:p-7
+                text-white
+              "
+            >
+              <h3 className="desc-font text-2xl md:text-3xl tracking-wide">
+                {category.title}
+              </h3>
+
+              <p className="outfit text-xs md:text-sm font-light mt-2 opacity-90 max-w-[250px]">
+                {category.subtitle}
+              </p>
+
+              <div
+                className="
+                  mt-4
+                  inline-flex
+                  items-center
+                  gap-2
+                  outfit
+                  text-[10px]
+                  tracking-[0.25em]
+                  uppercase
+                  border-b
+                  border-white/70
+                  pb-1
+                  opacity-0
+                  translate-y-2
+                  group-hover:opacity-100
+                  group-hover:translate-y-0
+                  transition-all
+                  duration-500
+                "
+              >
+                Explore
+                <span>→</span>
+              </div>
+            </div>
+          </Link>
         ))}
       </div>
     </section>

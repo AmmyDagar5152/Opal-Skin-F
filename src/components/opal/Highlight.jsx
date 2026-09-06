@@ -1,98 +1,175 @@
-// app/components/CollectionHighlight.tsx
-// Server Component – static by default
+"use client";
 
 import Image from "next/image";
 
-const products = [
+const climateFactors = [
   {
-    name: "Divine",
-    size: "30 ML x 2",
-    price: "₹4,000",
-    oldPrice: "₹5,000",
-    image: "/fum-img/note1.png",
+    number: "01",
+    title: "Heat",
+    subtitle: "Lightweight Rituals",
+    description:
+      "Thoughtfully considered textures designed to feel comfortable through warm Indian days.",
+    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban2.jpg",
   },
+
   {
-    name: "Asmira",
-    size: "100 ML",
-    price: "₹2,500",
-    image: "/fum-img/note6.png",
+    number: "02",
+    title: "Humidity",
+    subtitle: "Balanced Care",
+    description:
+      "A skincare approach that considers the oil, sweat and texture challenges that humidity can bring.",
+    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban3.jpg",
   },
+
   {
-    name: "Purple Blue",
-    size: "75 ML",
-    price: "₹2,250",
-    oldPrice: "₹3,000",
-    image: "/fum-img/note3.png",
+    number: "03",
+    title: "Pollution",
+    subtitle: "Cleanse & Support",
+    description:
+      "A considered daily ritual built around cleansing, nourishment and maintaining a healthy-looking skin barrier.",
+    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
   },
+
   {
-    name: "Twin Paradise",
-    size: "75 ML",
-    price: "₹2,250",
-    oldPrice: "₹3,000",
-    image: "/fum-img/note2.png",
+    number: "04",
+    title: "Sun",
+    subtitle: "Daily Protection",
+    description:
+      "Protection belongs at the centre of an everyday skincare ritual, especially under strong Indian sun exposure.",
+    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban3.jpg",
   },
 ];
 
-export default function CollectionHighlight() {
+export default function IndianClimate() {
   return (
-    <section className="bg-white py-20">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="relative w-full bg-[#171715] text-white overflow-hidden">
 
-          {/* LEFT CONTENT */}
-          <div>
-            <span className="text-lg tracking-widest outfit text-gray-500 uppercase">
-              An Ode to Modern Femininity
-            </span>
+      {/* Intro */}
+      <div className="relative px-5 md:px-10 py-20 md:py-28 text-center">
 
-            <h2 className="mt-4 ban-txt text-3xl md:text-4xl font-light text-black">
-              The Art of Feminine Confidence
-            </h2>
+        <p className="outfit text-[10px] md:text-xs uppercase tracking-[0.4em] text-white/50">
+          Created With India In Mind
+        </p>
 
-            <div className="mt-10 space-y-4">
-              {products.map((item) => (
-                <div
-                  key={item.name}
-                  className="flex items-center justify-between border-b pb-4"
-                >
-                  <div className="flex items-center gap-2">
-                    <Image src={item.image} alt={item.name} width={50} height={50} />
-                    <div className="flex flex-col gap-1">
-                      <p className="text-md outfit tracking-wide text-black">
-                        {item.name}
-                      </p>
-                      <span className="text-xs text-gray-500">
-                        {item.size}
-                      </span>
-                    </div>
-                  </div>
+        <h2 className="desc-font text-4xl md:text-6xl lg:text-7xl tracking-wide mt-4">
+          Made for the
+          <br />
+          Indian Climate
+        </h2>
 
-                  <div className="text-right">
-                    <p className="text-sm text-black">{item.price}</p>
-                    {item.oldPrice && (
-                      <p className="text-xs text-red-500 line-through">
-                        {item.oldPrice}
-                      </p>
-                    )}
-                  </div>
-                </div>
-              ))}
+        <p className="outfit max-w-2xl mx-auto text-sm md:text-base text-white/60 leading-relaxed mt-6">
+          From heat and humidity to pollution and intense sun, Opal Morsel
+          considers the realities of everyday life in India when shaping
+          the skincare ritual.
+        </p>
+
+      </div>
+
+      {/* Climate cards */}
+      <div
+        className="
+          grid
+          grid-cols-1
+          sm:grid-cols-2
+          lg:grid-cols-4
+          border-t
+          border-white/10
+        "
+      >
+
+        {climateFactors.map((factor) => (
+          <div
+            key={factor.number}
+            className="
+              group
+              relative
+              min-h-[470px]
+              md:min-h-[540px]
+              border-b
+              lg:border-b-0
+              border-r
+              last:border-r-0
+              border-white/10
+              overflow-hidden
+            "
+          >
+
+            {/* Background */}
+            <Image
+              src={factor.image}
+              alt={factor.title}
+              fill
+              className="
+                object-cover
+                opacity-45
+                group-hover:opacity-60
+                group-hover:scale-105
+                transition-all
+                duration-1000
+              "
+              sizes="(max-width: 1023px) 50vw, 25vw"
+            />
+
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-black/30" />
+
+            {/* Content */}
+            <div className="absolute inset-0 flex flex-col justify-between p-7 md:p-9">
+
+              {/* Number */}
+              <span className="outfit text-[10px] tracking-[0.3em] text-white/50">
+                {factor.number}
+              </span>
+
+              {/* Bottom */}
+              <div>
+
+                <p className="outfit text-[10px] uppercase tracking-[0.3em] text-white/60 mb-3">
+                  {factor.subtitle}
+                </p>
+
+                <h3 className="desc-font text-4xl md:text-5xl tracking-wide">
+                  {factor.title}
+                </h3>
+
+                <p className="
+                  outfit
+                  text-xs
+                  md:text-sm
+                  text-white/70
+                  leading-relaxed
+                  mt-4
+                  max-w-xs
+                ">
+                  {factor.description}
+                </p>
+
+              </div>
+
             </div>
 
-            <button className="mt-10 w-full bg-yellow-100 py-4 text-sm tracking-widest uppercase text-black hover:bg-yellow-200 transition">
-              Add Set to Cart
-            </button>
           </div>
+        ))}
 
-          {/* RIGHT IMAGE */}
-          <div
-            className="h-[520px] w-full group relative mx-auto  overflow-hidden 
-             bg-center bg-no-repeat bg-contain"
-            style={{ backgroundImage: "url(/fum-img/note14.png)" }}
-          />
-
-        </div>
       </div>
+
+      {/* Bottom statement */}
+      <div className="px-5 md:px-10 py-16 md:py-20 text-center">
+
+        <p className="desc-font text-2xl md:text-3xl lg:text-4xl max-w-4xl mx-auto leading-relaxed text-white/90">
+          "Skincare should adapt to the world
+          <br className="hidden md:block" />
+          your skin lives in."
+        </p>
+
+        <div className="mt-7">
+          <span className="outfit text-[10px] uppercase tracking-[0.35em] text-white/40">
+            Opal Morsel
+          </span>
+        </div>
+
+      </div>
+
     </section>
   );
 }
