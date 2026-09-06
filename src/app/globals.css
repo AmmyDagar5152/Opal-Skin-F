@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+  /* transform: scale(1.02); */
+}
+
+.asidcar {
+  border-radius: 25px 0 0 25px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.main-head {
+  font-family: 'Londrina Sketch', cursive;
+}
+
+.ban-txt {
+  font-family: 'Great Vibes', cursive;
+}
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+ 
+  font-style: normal;
+}
+
+.head-font {
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.desc-font {
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.marque-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-optical-sizing: auto;
+}
+
+
+/* mainbanner scroll  */
+.animate-banner {
+  display: flex;
+  width: 100%;
+  animation: scrollBanner 15s linear infinite;
+}
+
+@keyframes scrollBanner {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+
+
+
+/* -----  custom scrollbar  ----- */
+
+.scrollbar-custom::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 9999px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #76371093;
+  border-radius: 9999px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #74440dbd;
+}
+
+
+
+/* brand slider  */
+.animate-marquee {
+  display: flex;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.brand-main:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+
+/* Footer css  */
+.newsletter-button {
+  height: 38px;
+  width: 38px;
+  padding: 11px 12px 11px 15px;
+  border-radius: 100%;
+  border: none;
+}
+
+.newletter-field__input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 20px;
+  padding-left: 15px;
+  color: #b7bdc6;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: 'Circular Std Medium';
+  width: 70%;
+  height: 100%;
+}
+
+.field {
+  height: 38px;
+  border-radius: 35px;
+  border: 1px solid #dbdee8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  max-width: 300px;
+}
+
+/* header css  */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.added-pulse {
+  animation: pulse 0.4s ease-in-out;
+}
+
+
+
+@media (319px <=width <=430px) {
+  .asidcar {
+    border-radius: 0;
+  }
+}
+
+
+/* opal morsel  */
+/* Banner slider strict visibility control */
+.banner-swiper .swiper-slide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.banner-swiper .swiper-slide-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+
+
+/* opal perfume  */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 1s ease-out forwards;
+}
