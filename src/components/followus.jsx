@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-console.log("Followus component rendered");
 
 export default function Followus() {
   return (
