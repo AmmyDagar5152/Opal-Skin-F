@@ -21,6 +21,8 @@ import SkinCareDifference from "./opal/SkinCareDifference";
 import ShopByConcerns from "./opal/ShopByConcerns";
 import ShopByIngredients from "./opal/ShopByIngredients";
 import FeaturedProducts from "./FeaturedProducts";
+import RoutineBuilder from "./opal/RoutineBuilder";
+import SaveOnSets from "./opal/SaveOnSets";
 
 export default function Main() {
     return (
@@ -31,15 +33,17 @@ export default function Main() {
             <SkinCareDifference />
             <ShopByCategory />
             <ShopByIngredients />
-<FeaturedProducts />
-            <CollectionHighlight />
+            <FeaturedProducts />
+            <RoutineBuilder />
+            {/* <CollectionHighlight /> */}
             <TextOver />
-            <FragranceSlider />
+            <SaveOnSets />
+            {/* <FragranceSlider /> */}
             {/* <ProductCard /> */}
-     
+
             <Followus />
-            <TestimonialSection/>
-         
+            <TestimonialSection />
+
         </>
     )
 }
