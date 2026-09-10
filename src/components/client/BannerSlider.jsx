@@ -122,11 +122,13 @@ export default function BannerSlider({
           onClick={toggleMute}
           className="
             absolute
-            bottom-8
-            right-8
+            bottom-1
+            right-1
+            sm:bottom-8
+            sm:right-8
             z-50
-            w-11
-            h-11
+            w-9
+            h-9
             rounded-full
             bg-black/50
             backdrop-blur-md
@@ -151,7 +153,7 @@ export default function BannerSlider({
       )}
 
       {/* ================= TEXT ================= */}
-      <div className="absolute bottom-10 left-[2%] md:left-[38%] z-20 flex items-center justify-center pointer-events-none">
+      <div className="absolute bottom-10 left-[9%] md:left-[38%] z-20 flex items-center justify-center pointer-events-none">
         <div className="flex flex-col p-2 gap-1 items-center bg-white/50 backdrop-blur-[20px] rounded no-underline overflow-hidden">
           <h1 className="text-3xl desc-font tracking-wide">
             OPAL MORSEL FRAGNANCES

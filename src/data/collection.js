@@ -1,81 +1,240 @@
 export const collectionsData = {
-  men: {
-    title: "Men's Fragrances",
-    introTitle: "La Collection Privée",
+  "uneven-tone": {
+    eyebrow: "Skin Concern",
+    title: "Uneven Tone",
     description:
-      "Perfume and couture blend to create structured olfactory silhouettes, crafted from the finest ingredients.",
-    items: [
+      "Thoughtfully considered formulations designed to support a brighter, more even-looking complexion.",
+    heroImage:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
+
+    categories: [
       {
-        id: 1,
-        name: "La Collection Privée",
-        image: "/fum-img/bgslide3.png",
+        name: "Cleansers",
+        slug: "cleansers",
       },
       {
-        id: 2,
-        name: "Sauvage",
-        image: "/fum-img/bgslide5.png",
+        name: "Serums",
+        slug: "serums",
       },
       {
-        id: 3,
-        name: "Dior Homme",
-        image: "/fum-img/bgslide4.png",
+        name: "Exfoliants & Masks",
+        slug: "masks",
+      },
+      {
+        name: "Hydrators & Moisturisers",
+        slug: "moisturisers",
+      },
+      {
+        name: "Eye & Lip Care",
+        slug: "eye-lip",
+      },
+      {
+        name: "Sun Protection",
+        slug: "sunscreen",
       },
     ],
   },
 
-  women: {
-    title: "Women's Fragrances",
-    introTitle: "Signature Scents",
+  blemishes: {
+    eyebrow: "Skin Concern",
+    title: "Blemishes & Congestion",
     description:
-      "Floral, sensual and timeless fragrances crafted to express individuality.",
-    items: [
+      "Targeted formulations for breakout-prone skin, excess oil and visible congestion.",
+    heroImage:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban2.jpg",
+
+    categories: [
       {
-        id: 1,
-        name: "J'adore",
-        image: "/fum-img/bgslide3.png",
+        name: "Cleansers",
+        slug: "cleansers",
       },
       {
-        id: 2,
-        name: "Miss Dior",
-        image: "/fum-img/bgslide1.png",
+        name: "Serums",
+        slug: "serums",
+      },
+      {
+        name: "Exfoliants & Masks",
+        slug: "masks",
+      },
+      {
+        name: "Hydrators & Moisturisers",
+        slug: "moisturisers",
+      },
+      {
+        name: "Sun Protection",
+        slug: "sunscreen",
       },
     ],
   },
 
-  opalex: {
-    title: "Opal Exclusive",
-    introTitle: "Our Complete Collection",
+  "excess-oil": {
+    eyebrow: "Skin Concern",
+    title: "Excess Oil",
     description:
-      "Explore the full range of fragrances across all collections.",
-    items: [
+      "Balanced formulations created for oily and combination skin without compromising comfort.",
+    heroImage:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban3.jpg",
+
+    categories: [
       {
-        id: 1,
-        name: "Opal Exclusive 1",
-        image: "/fum-img/bgslide3.png",
+        name: "Cleansers",
+        slug: "cleansers",
       },
       {
-        id: 2,
-        name: "Opal Exclusive 2",
-        image: "/fum-img/bgslide2.png",
+        name: "Serums",
+        slug: "serums",
+      },
+      {
+        name: "Exfoliants & Masks",
+        slug: "masks",
+      },
+      {
+        name: "Hydrators & Moisturisers",
+        slug: "moisturisers",
+      },
+      {
+        name: "Sun Protection",
+        slug: "sunscreen",
       },
     ],
   },
 
-   opalluxe: {
-    title: "Opal Luxe",
-    introTitle: "Our Complete Collection",
+  dehydration: {
+    eyebrow: "Skin Concern",
+    title: "Dehydrated Skin",
     description:
-      "Explore the full range of fragrances across all collections.",
-    items: [
+      "Comforting hydration for skin that feels dry, tight, depleted or in need of replenishment.",
+    heroImage:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
+
+    categories: [
       {
-        id: 1,
-        name: "Opal Luxe 1",
-        image: "/fum-img/bgslide3.png",
+        name: "Cleansers",
+        slug: "cleansers",
       },
       {
-        id: 2,
-        name: "Opal Luxe 2",
-        image: "/fum-img/bgslide2.png",
+        name: "Hydrators & Moisturisers",
+        slug: "moisturisers",
+      },
+      {
+        name: "Exfoliants & Masks",
+        slug: "masks",
+      },
+      {
+        name: "Sun Protection",
+        slug: "sunscreen",
+      },
+    ],
+  },
+
+  barrier: {
+    eyebrow: "Skin Concern",
+    title: "Barrier Support",
+    description:
+      "Nourishing formulations designed to help skin feel comfortable, supported and resilient.",
+    heroImage:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban2.jpg",
+
+    categories: [
+      {
+        name: "Cleansers",
+        slug: "cleansers",
+      },
+      {
+        name: "Hydrators & Moisturisers",
+        slug: "moisturisers",
+      },
+      {
+        name: "Serums",
+        slug: "serums",
+      },
+      {
+        name: "Exfoliants & Masks",
+        slug: "masks",
+      },
+    ],
+  },
+
+  firmness: {
+    eyebrow: "Skin Concern",
+    title: "Fine Lines & Firmness",
+    description:
+      "Considered treatments for smoother, firmer-looking skin and a refined skincare ritual.",
+    heroImage:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban3.jpg",
+
+    categories: [
+      {
+        name: "Serums",
+        slug: "serums",
+      },
+      {
+        name: "Hydrators & Moisturisers",
+        slug: "moisturisers",
+      },
+      {
+        name: "Exfoliants & Masks",
+        slug: "masks",
+      },
+      {
+        name: "Sun Protection",
+        slug: "sunscreen",
+      },
+    ],
+  },
+
+  radiance: {
+    eyebrow: "Skin Concern",
+    title: "Dullness & Radiance",
+    description:
+      "Formulations created to support a fresh, luminous and healthy-looking complexion.",
+    heroImage:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
+
+    categories: [
+      {
+        name: "Cleansers",
+        slug: "cleansers",
+      },
+      {
+        name: "Serums",
+        slug: "serums",
+      },
+      {
+        name: "Exfoliants & Masks",
+        slug: "masks",
+      },
+      {
+        name: "Hydrators & Moisturisers",
+        slug: "moisturisers",
+      },
+      {
+        name: "Sun Protection",
+        slug: "sunscreen",
+      },
+    ],
+  },
+
+  "uv-protection": {
+    eyebrow: "Daily Ritual",
+    title: "Daily UV Protection",
+    description:
+      "Everyday protection designed to become an effortless part of your skincare ritual.",
+    heroImage:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban2.jpg",
+
+    categories: [
+      {
+        name: "Sun Protection",
+        slug: "sunscreen",
+      },
+      {
+        name: "Hydrators & Moisturisers",
+        slug: "moisturisers",
+      },
+      {
+        name: "Serums",
+        slug: "serums",
       },
     ],
   },

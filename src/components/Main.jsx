@@ -23,6 +23,7 @@ import ShopByIngredients from "./opal/ShopByIngredients";
 import FeaturedProducts from "./FeaturedProducts";
 import RoutineBuilder from "./opal/RoutineBuilder";
 import SaveOnSets from "./opal/SaveOnSets";
+import MemberBenefits from "./opal/MemberBenefits";
 
 export default function Main() {
     return (
@@ -42,7 +43,8 @@ export default function Main() {
             {/* <ProductCard /> */}
 
             <Followus />
-            <TestimonialSection />
+            <MemberBenefits />
+            {/* <TestimonialSection /> */}
 
         </>
     )

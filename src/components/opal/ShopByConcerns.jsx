@@ -106,11 +106,11 @@ export default function ShopByConcerns() {
           "
         >
           {concerns.map((concern) => (
-            <Link
-              key={concern.slug}
-              href={`/shop?concern=${concern.slug}`}
-              className="group"
-            >
+        <Link
+  key={concern.slug}
+  href={`/collections/${concern.slug}`}
+  className="group"
+>
 
               {/* Image */}
               <div className="relative aspect-[4/5] overflow-hidden">

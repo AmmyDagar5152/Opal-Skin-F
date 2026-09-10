@@ -1,97 +1,264 @@
-import Image from "next/image";
 import Link from "next/link";
-// import NewsletterForm from "./NewsletterForm";
-import { FaInstagram, FaLinkedin, FaFacebookF } from "react-icons/fa";
-// import Newletter from "../NewLetter";
+import { FaInstagram, FaFacebookF, FaPinterestP } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer
-      className="bg-black desc-font text-white pt-10 pb-5 w-full"
-      aria-labelledby="footer-heading"
-    >
+    <footer className="w-full bg-[#171815] pt-16 pb-6 text-[#f5f1e8]" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
-        Footer
+        Opal Morsel Footer
       </h2>
 
-      <div className="max-w-7xl mx-auto px-6 md:grid md:grid-cols-3 gap-8">
-        {/* Brand */}
-        <section>
-          <div className="flex items-center gap-5">
-            <Image
-              src="/site-img/logon1.png"
-              alt="Opal Morsel logo"
-              height={80}
-              width={70}
-            />
-            <p className="text-3xl uppercase font-medium tracking-wider">
-              Opal Morsel
-            </p>
-          </div>
+      <div className="mx-auto max-w-7xl px-6 md:px-10 lg:px-12">
+        <div className="grid gap-12 md:grid-cols-4 md:gap-8 lg:gap-16">
+          {/* Brand */}
+          <section className="md:col-span-1">
+            <Link href="/" className="inline-block">
+              <p className="desc-font text-3xl tracking-[0.08em] uppercase">
+                Opal Morsel
+              </p>
+            </Link>
 
-          <p className="text-base mt-3 tracking-wider leading-relaxed">
-            Not your regular sweets — our ladoos are handmade with love,
-            powered by nutrition, and free from all the artificial fuss.
+            <p className="outfit mt-5 max-w-xs text-xs leading-relaxed text-[#f5f1e8]/60">
+              Modern skincare, thoughtfully formulated for the realities of
+              Indian skin and climate.
+            </p>
+
+            <p className="outfit mt-4 max-w-xs text-[10px] uppercase tracking-[0.2em] text-[#f5f1e8]/40">
+              Cleanse · Treat · Repair · Protect
+            </p>
+
+            <nav className="mt-7 flex items-center gap-5" aria-label="Social links">
+              <Link
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="text-[#f5f1e8]/70 transition-colors duration-300 hover:text-white"
+              >
+                <FaInstagram size={17} />
+              </Link>
+
+              <Link
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="text-[#f5f1e8]/70 transition-colors duration-300 hover:text-white"
+              >
+                <FaFacebookF size={15} />
+              </Link>
+
+              <Link
+                href="https://pinterest.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Pinterest"
+                className="text-[#f5f1e8]/70 transition-colors duration-300 hover:text-white"
+              >
+                <FaPinterestP size={17} />
+              </Link>
+            </nav>
+          </section>
+
+          {/* Shop */}
+          <section>
+            <nav aria-label="Shop links">
+              <h3 className="outfit mb-5 text-[10px] uppercase tracking-[0.3em] text-[#f5f1e8]/40">
+                Shop
+              </h3>
+
+              <ul className="space-y-3">
+                <li>
+                  <Link href="/products" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                    All Products
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/collections/cleanse" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                    Cleanse
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/collections/treat" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                    Treat
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/collections/repair" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                    Repair
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/collections/protect" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                    Protect
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/collections/sets" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                    Ritual Sets
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </section>
+
+          {/* Explore */}
+          <section>
+            <nav aria-label="Explore links">
+              <h3 className="outfit mb-5 text-[10px] uppercase tracking-[0.3em] text-[#f5f1e8]/40">
+                Explore
+              </h3>
+
+              <ul className="space-y-3">
+                <li>
+                  <Link href="/routine" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                    Find Your Routine
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/ingredients" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                    Ingredients
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/science" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                    Our Science
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/journal" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                    Journal
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/about" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                    About Opal Morsel
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/contact" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </section>
+
+          {/* Customer Care */}
+          <section>
+            <h3 className="outfit mb-5 text-[10px] uppercase tracking-[0.3em] text-[#f5f1e8]/40">
+              Customer Care
+            </h3>
+
+            <ul className="space-y-3">
+              <li>
+                <Link href="/shipping" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                  Shipping & Delivery
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/returns" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                  Returns & Refunds
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/faq" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                  FAQs
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/privacy" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                  Privacy Policy
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/terms" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                  Terms & Conditions
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/disclaimer" className="outfit text-xs text-[#f5f1e8]/75 transition-colors duration-300 hover:text-white">
+                  Disclaimer
+                </Link>
+              </li>
+            </ul>
+
+            <div className="mt-7">
+              <p className="outfit text-[10px] uppercase tracking-[0.2em] text-[#f5f1e8]/40">
+                Need help?
+              </p>
+
+              <a
+                href="mailto:hello@opalmorsel.com"
+                className="outfit mt-2 inline-block text-xs text-[#f5f1e8]/80 transition-colors duration-300 hover:text-white"
+              >
+                hello@opalmorsel.com
+              </a>
+            </div>
+          </section>
+        </div>
+
+        {/* Newsletter */}
+        <div className="mt-16 border-t border-[#f5f1e8]/10 pt-10 md:mt-20">
+          <div className="grid gap-8 md:grid-cols-2 md:items-end">
+            <div>
+              <p className="outfit text-[9px] uppercase tracking-[0.4em] text-[#f5f1e8]/40">
+                The Opal Morsel Journal
+              </p>
+
+              <h3 className="desc-font mt-3 max-w-xl text-2xl tracking-wide md:text-3xl">
+                Thoughtful skincare, delivered to you.
+              </h3>
+
+              <p className="outfit mt-3 max-w-lg text-xs leading-relaxed text-[#f5f1e8]/50">
+                Discover skincare rituals, ingredient stories and considered
+                formulations from the world of Opal Morsel.
+              </p>
+            </div>
+
+            <form className="flex w-full max-w-xl border-b border-[#f5f1e8]/30 pb-3 md:ml-auto">
+              <input
+                type="email"
+                placeholder="Your email address"
+                aria-label="Email address"
+                className="outfit min-w-0 flex-1 bg-transparent text-xs text-white outline-none placeholder:text-[#f5f1e8]/30"
+              />
+
+              <button
+                type="submit"
+                className="outfit shrink-0 text-[9px] uppercase tracking-[0.25em] text-[#f5f1e8]/80 transition-colors duration-300 hover:text-white"
+              >
+                Subscribe →
+              </button>
+            </form>
+          </div>
+        </div>
+
+        {/* Bottom */}
+        <div className="mt-12 flex flex-col gap-3 border-t border-[#f5f1e8]/10 pt-5 md:flex-row md:items-center md:justify-between">
+          <p className="outfit text-[9px] uppercase tracking-[0.2em] text-[#f5f1e8]/35">
+            © {new Date().getFullYear()} Opal Morsel. All rights reserved.
           </p>
 
-          <nav
-            className="flex items-center justify-center space-x-4 mt-6"
-            aria-label="Social links"
-          >
-            <Link href="https://instagram.com" aria-label="Instagram">
-              <FaInstagram />
-            </Link>
-            <Link href="https://linkedin.com" aria-label="LinkedIn">
-              <FaLinkedin />
-            </Link>
-            <Link href="https://facebook.com" aria-label="Facebook">
-              <FaFacebookF />
-            </Link>
-          </nav>
-        </section>
-
-        {/* Navigation */}
-        <section className="flex items-start justify-between mt-5">
-          <nav aria-label="Shop links">
-            <h3 className="font-semibold mb-4">Shop</h3>
-            <ul className="space-y-2 tracking-wider">
-              <li><Link href="/products">All Products</Link></li>
-              <li><Link href="/new">New Launches & Offers</Link></li>
-              <li><Link href="/bakery">Bakery Bites</Link></li>
-              <li><Link href="/ladoos">Ladoos</Link></li>
-              <li><Link href="/dry-fruits">Dry Fruits & Seeds</Link></li>
-            </ul>
-          </nav>
-
-          <nav aria-label="Quick links">
-            <h3 className="font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2 tracking-wider">
-              <li><Link href="/ship">Shipping & Delivery</Link></li>
-              <li><Link href="/term">Terms & Conditions</Link></li>
-              <li><Link href="/privacy">Privacy Policy</Link></li>
-              <li><Link href="/disclaimer">Disclaimer</Link></li>
-            </ul>
-          </nav>
-        </section>
-
-        {/* Contact + Newsletter */}
-        <section className="mt-5 text-center">
-          <h3 className="font-semibold mb-3">Contact Us</h3>
-          <p>Ph: +91 9606030616</p>
-          <p>Mon–Sat, 10 AM – 6 PM</p>
-          <p>Email: opalmorsel@gmail.com</p>
-          <p>We respond within 48 hours.</p>
-          {/* <Newletter/> */}
-
-        </section>
-      </div>
-
-      {/* Bottom */}
-      <div className="border-t bg-white text-[#0b1c2c] mt-10 pt-4 text-center text-base">
-        <p>
-          Cravings? Poof! Our ladoos turn them into blissful bites of health.
-        </p>
-        <p className="mt-2">Created with ❤️ © 2025, Opal Morsel</p>
+          <p className="outfit text-[9px] uppercase tracking-[0.2em] text-[#f5f1e8]/35">
+            Modern skincare · Considered rituals
+          </p>
+        </div>
       </div>
     </footer>
   );
