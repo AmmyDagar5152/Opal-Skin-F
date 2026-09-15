@@ -1,5 +1,4 @@
-import ProductCard from "./ProductCard";
-
+import ProductCard from "../opal/ProductCard";
 export default function ProductGrid({ products = [] }) {
   if (!products.length) {
     return (
