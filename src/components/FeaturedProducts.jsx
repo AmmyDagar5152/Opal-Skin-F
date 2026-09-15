@@ -15,7 +15,7 @@ const products = [
     category: "CLARIFY",
     name: "Salicylic + Niacinamide Serum",
     description:
-      "A targeted serum concept created for skin prone to excess oil, congestion and an uneven-looking complexion.",
+      "Congestion · Excess Oil · Breakouts <br/> A targeted serum concept created for skin prone to excess oil, congestion and an uneven-looking complexion.",
     image:
       "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
     slug: "salicylic-niacinamide-serum",
@@ -26,7 +26,7 @@ const products = [
     category: "RESTORE",
     name: "Ceramide + Ectoin Barrier Cream",
     description:
-      "A nourishing barrier-focused cream designed for skin that needs comfort, moisture and support.",
+      "Dehydration · Sensitivity · Barrier Support <br/> A nourishing barrier-focused cream designed for skin that needs comfort, moisture and support.",
     image:
       "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban3.jpg",
     slug: "ceramide-ectoin-barrier-cream",
@@ -35,35 +35,15 @@ const products = [
   {
     number: "03",
     category: "PROTECT",
-    name: "SPF 50+ Tinted Sunscreen",
+    name: "SPF 50+ Daily Sunscreen",
     description:
-      "Daily UV protection designed to become an effortless part of your everyday skincare ritual.",
+      "Daily UV exposure <br/> Daily UV protection designed to become an effortless part of your everyday skincare ritual.",
     image:
       "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
-    slug: "spf-50-tinted-sunscreen",
+    slug: "spf-50-daily-sunscreen",
   },
 
-  {
-    number: "04",
-    category: "HYDRATE",
-    name: "CICA + Hyaluronic Hydration Mask",
-    description:
-      "A hydration-focused mask concept for skin that feels dry, tight or depleted.",
-    image:
-      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban2.jpg",
-    slug: "cica-hyaluronic-mask",
-  },
 
-  {
-    number: "05",
-    category: "RENEW",
-    name: "Copper Peptide + Bakuchiol Night Cream",
-    description:
-      "A night-care concept focused on smoother, firmer-looking and well-nourished skin.",
-    image:
-      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban3.jpg",
-    slug: "copper-peptide-bakuchiol-night-cream",
-  },
 ];
 
 export default function FeaturedProducts() {

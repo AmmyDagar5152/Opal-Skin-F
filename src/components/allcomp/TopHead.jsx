@@ -44,7 +44,7 @@ export default function TopHead() {
       {visible && (
         <div className="w-full bg-black text-white text-xs hidden md:block relative">
           <div className="container mx-auto px-4 py-1 text-center">
-            Free delivery on orders above ₹2599 • Wear the vibe, own the moment
+            FREE SHIPPING ABOVE ₹999 · COD AVAILABLE
           </div>
           <button
             onClick={() => setVisible(false)}

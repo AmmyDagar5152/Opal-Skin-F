@@ -6,34 +6,38 @@ import { ArrowUpRight } from "lucide-react";
 
 const concerns = [
   {
-    title: "Uneven Tone",
+    title: "ACNE & CONGESTION",
     description: "For a brighter, more even-looking complexion",
-    slug: "uneven-tone",
-    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
+    slug: "acne-congestion",
+    image:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
     product: "Salicylic + Niacinamide Serum",
   },
 
   {
-    title: "Blemishes & Congestion",
+    title: "UNEVENTONE",
     description: "For breakout-prone and congested skin",
-    slug: "blemishes",
-    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban2.jpg",
+    slug: "uneventone",
+    image:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban2.jpg",
     product: "Salicylic + Niacinamide Serum",
   },
 
   {
-    title: "Excess Oil",
+    title: "DULLNESS",
     description: "For oily and combination skin",
-    slug: "excess-oil",
-    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban3.jpg",
+    slug: "dullness",
+    image:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban3.jpg",
     product: "Clay & Peptide Clarifying Mask",
   },
 
   {
-    title: "Dehydrated Skin",
+    title: "DEHYDRATION",
     description: "For skin that feels dry, tight or depleted",
     slug: "dehydration",
-    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
+    image:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
     product: "CICA + Hyaluronic Hydration Mask",
   },
 
@@ -41,31 +45,35 @@ const concerns = [
     title: "Barrier Support",
     description: "For skin that needs comfort and nourishment",
     slug: "barrier",
-    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban2.jpg",
+    image:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban2.jpg",
     product: "Ceramide + Ectoin Barrier Cream",
   },
 
   {
-    title: "Fine Lines & Firmness",
+    title: "EXCESS OIL",
     description: "For smoother, firmer-looking skin",
-    slug: "firmness",
-    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban3.jpg",
+    slug: "excess-oil",
+    image:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban3.jpg",
     product: "Copper Peptide + Bakuchiol Night Cream",
   },
 
   {
-    title: "Dullness & Radiance",
+    title: "TEXTURE & PORES",
     description: "For skin that looks tired or lacklustre",
-    slug: "radiance",
-    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
+    slug: "texture-pores",
+    image:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
     product: "Fermented Honey Glow Cleanser",
   },
 
   {
-    title: "Daily UV Protection",
+    title: "FINE LINES",
     description: "Everyday protection for your skincare ritual",
-    slug: "uv-protection",
-    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban2.jpg",
+    slug: "fine-lines",
+    image:
+      "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban2.jpg",
     product: "SPF 50+ Tinted Sunscreen",
   },
 ];
@@ -73,10 +81,8 @@ const concerns = [
 export default function ShopByConcerns() {
   return (
     <section className="w-full bg-[#f7f6f3] py-20 md:py-28">
-
       {/* Header */}
       <div className="max-w-3xl mx-auto px-5 text-center">
-
         <p className="outfit text-[10px] md:text-xs tracking-[0.4em] uppercase text-neutral-500">
           Skincare, Considered
         </p>
@@ -86,15 +92,13 @@ export default function ShopByConcerns() {
         </h2>
 
         <p className="outfit text-sm md:text-base text-neutral-500 leading-relaxed mt-5">
-          Thoughtfully considered formulations for the concerns that matter
-          most to your skin.
+          Thoughtfully considered formulations for the concerns that matter most
+          to your skin.
         </p>
-
       </div>
 
       {/* Grid */}
       <div className="mt-12 md:mt-16 px-5 md:px-10 lg:px-14">
-
         <div
           className="
             grid
@@ -106,15 +110,13 @@ export default function ShopByConcerns() {
           "
         >
           {concerns.map((concern) => (
-        <Link
-  key={concern.slug}
-  href={`/collections/${concern.slug}`}
-  className="group"
->
-
+            <Link
+              key={concern.slug}
+              href={`/collections/${concern.slug}`}
+              className="group"
+            >
               {/* Image */}
               <div className="relative aspect-[4/5] overflow-hidden">
-
                 <Image
                   src={concern.image}
                   alt={concern.title}
@@ -166,10 +168,7 @@ export default function ShopByConcerns() {
                     duration-500
                   "
                 >
-                  <ArrowUpRight
-                    size={16}
-                    strokeWidth={1.5}
-                  />
+                  <ArrowUpRight size={16} strokeWidth={1.5} />
                 </div>
 
                 {/* Image Title */}
@@ -187,14 +186,11 @@ export default function ShopByConcerns() {
                     {concern.title}
                   </h3>
                 </div>
-
               </div>
 
               {/* Text */}
               <div className="pt-4">
-
                 <div className="flex items-start justify-between gap-3">
-
                   <h4 className="desc-font text-xl text-neutral-900">
                     {concern.title}
                   </h4>
@@ -209,7 +205,6 @@ export default function ShopByConcerns() {
                       transition-colors
                     "
                   />
-
                 </div>
 
                 <p className="outfit text-xs md:text-sm text-neutral-500 mt-1 leading-relaxed">
@@ -219,18 +214,14 @@ export default function ShopByConcerns() {
                 <p className="outfit text-[10px] uppercase tracking-[0.15em] text-neutral-400 mt-3">
                   Explore {concern.product}
                 </p>
-
               </div>
-
             </Link>
           ))}
         </div>
-
       </div>
 
       {/* Bottom CTA */}
       <div className="flex justify-center mt-16">
-
         <Link
           href="/shop"
           className="
@@ -249,9 +240,7 @@ export default function ShopByConcerns() {
         >
           Explore All Skincare
         </Link>
-
       </div>
-
     </section>
   );
 }

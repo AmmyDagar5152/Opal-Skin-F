@@ -19,19 +19,14 @@ export default function BrandStory() {
 
 <p className="md:text-base outfit tracking-wide leading-relaxed text-gray-600">
   <span className="font-semibold">
-    Opal Morsel skincare is an expression of refined care, created for skin that deserves nothing less than exceptional.
-  </span>
+Skincare for the Indian climate.  </span>
   <br />
 
-  Each formulation is thoughtfully crafted with carefully selected ingredients,
-  considered textures, and a commitment to modern skin wellness. Designed to
-  nourish, restore, and reveal the natural luminosity of your skin, every
-  creation transforms your daily routine into a quiet ritual of self-care.
+ Heat. Humidity. Pollution. Sun exposure. Long days.
   <br />
 
   <span>
-    Where sophisticated formulations meet timeless elegance — created for those
-    who believe true luxury is felt, not flaunted.
+ Opal Morsel creates high-performance formulations designed around the realities of modern Indian skin—balancing efficacy, tolerance and sensorial experience.
   </span>
 </p>
 

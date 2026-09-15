@@ -1,147 +1,4 @@
-// "use client";
 
-// import { motion, useScroll, useTransform } from "framer-motion";
-// import { useRef } from "react";
-
-// const TextOver = () => {
-//   const ref = useRef(null);
-
-//   const { scrollYProgress } = useScroll({
-//     target: ref,
-//     offset: ["start start", "end start"],
-//   });
-
-//   // Text animations
-//   const textY = useTransform(
-//     scrollYProgress,
-//     [0, 1],
-//     ["0%", "-60%"]
-//   );
-
-//   const textOpacity = useTransform(
-//     scrollYProgress,
-//     [0, 0.7],
-//     [1, 0]
-//   );
-
-//   return (
-//     <>
-//       {/* =========================================
-//           FIXED BACKGROUND VIDEO
-//       ========================================= */}
-
-//       <div className="fixed inset-0 -z-10 overflow-hidden bg-black">
-
-//         <video
-//           autoPlay
-//           muted
-//           loop
-//           playsInline
-//           preload="auto"
-//           className="
-//             absolute
-//             inset-0
-//             w-full
-//             h-full
-//             object-cover
-//             object-center
-//           "
-//         >
-//           <source
-//             src="https://res.cloudinary.com/dr1jqpozn/video/upload/v1788680664/bannervd.mp4"
-//             type="video/mp4"
-//           />
-//         </video>
-
-//         {/* Dark overlay */}
-//         <div className="absolute inset-0 bg-black/50" />
-
-//         {/* Slight luxury blur */}
-//         <div className="absolute inset-0 backdrop-blur-[2px]" />
-
-//       </div>
-
-
-//       {/* =========================================
-//           HERO SECTION
-//       ========================================= */}
-
-//       <section
-//         ref={ref}
-//         className="
-//           relative
-//           h-screen
-//           flex
-//           items-center
-//           justify-center
-//           overflow-hidden
-//         "
-//       >
-
-//         {/* TEXT */}
-
-//         <motion.div
-//           style={{
-//             y: textY,
-//             opacity: textOpacity,
-//           }}
-//           className="
-//             relative
-//             z-10
-//             px-6
-//             text-center
-//             text-white
-//             max-w-3xl
-//           "
-//         >
-
-//           <p className="
-//             mb-4
-//             text-sm
-//             outfit
-//             tracking-widest
-//             uppercase
-//             opacity-80
-//           ">
-//             The savoir-faire
-//           </p>
-
-
-//           <h1 className="
-//             mb-6
-//             text-4xl
-//             desc-font
-//             md:text-6xl
-//             leading-tight
-//           ">
-//             Born in the wild,
-//             <br />
-//             crafted by OPAL MORSEL
-//           </h1>
-
-
-//           <p className="
-//             mx-auto
-//             max-w-xl
-//             outfit
-//             text-sm
-//             md:text-base
-//             opacity-90
-//             leading-relaxed
-//           ">
-//             The sandalwood used by the House of Dior is grown
-//             with utmost care during its early years, then left
-//             to grow free in a harsh, untamed environment.
-//           </p>
-
-//         </motion.div>
-
-//       </section>
-//     </>
-//   );
-// };
-
-// export default TextOver;
 
 
 "use client";
@@ -152,24 +9,24 @@ import { useState } from "react";
 const experiences = [
   {
     id: 1,
-    title: "INCENSE",
-    subtitle: "introducing our new creations...",
+    title: "UNDERSTANDING YOUR SKIN",
+    subtitle: "Why Indian skin needs a different approach..",
     mediaType: "video",
     video:
       "https://res.cloudinary.com/dr1jqpozn/video/upload/v1788680664/bannervd.mp4",
   },
   {
     id: 2,
-    title: "BODY — HAIR — FACE",
-    subtitle: "sensorial creations for the body, hair, and face...",
+    title: "THE INGREDIENT EDIT",
+    subtitle: "Niacinamide, ceramides, peptides—what actually matters?",
     mediaType: "image",
     image:
       "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
   },
   {
     id: 3,
-    title: "ABOUT OPAL MORSEL",
-    subtitle: "thoughtfully formulated and refined for modern rituals...",
+    title: "THE RITUAL",
+    subtitle: "How to build a simple AM/PM routine.",
     mediaType: "video",
     video:
       "https://res.cloudinary.com/dr1jqpozn/video/upload/v1788680664/bannervd.mp4",

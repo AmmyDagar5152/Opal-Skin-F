@@ -156,11 +156,11 @@ export default function BannerSlider({
       <div className="absolute bottom-10 left-[9%] md:left-[38%] z-20 flex items-center justify-center pointer-events-none">
         <div className="flex flex-col p-2 gap-1 items-center bg-white/50 backdrop-blur-[20px] rounded no-underline overflow-hidden">
           <h1 className="text-3xl desc-font tracking-wide">
-            OPAL MORSEL FRAGNANCES
+            FORMULATED FOR YOUR SKIN
           </h1>
 
           <p className="text-sm outfit md:text-base font-extralight mt-1">
-            Crafted for Those Who Leave a Lasting Impression
+            High-performance skincare, thoughtfully made
           </p>
 
           <button className="underline outfit text-xs font-extralight tracking-wider">

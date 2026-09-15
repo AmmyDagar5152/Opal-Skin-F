@@ -28,6 +28,12 @@ const benefits = [
     description: "Be the first to discover new formulations, rituals and limited creations.",
     image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
   },
+    {
+    id: 4,
+    title: "PRIVATE LAUNCHES",
+    description: "Members see new products first.",
+    image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
+  },
 ];
 
 const marqueeBenefits = [...benefits, ...benefits];

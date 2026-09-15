@@ -8,8 +8,8 @@ const sets = [
     id: 1,
     value: "₹2,999 VALUE",
     save: "SAVE 15%",
-    name: "THE BARRIER RITUAL",
-    eyebrow: "RESTORE · HYDRATE · PROTECT",
+    name: "THE BEGINNER RITUAL",
+    eyebrow: "CLEANSE · TREAT · PROTECT",
     description:
       "A considered ritual for skin that needs comfort, hydration and barrier support.",
     image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
@@ -23,8 +23,8 @@ const sets = [
     id: 2,
     value: "₹2,499 VALUE",
     save: "SAVE 12%",
-    name: "THE CLARITY RITUAL",
-    eyebrow: "CLARIFY · BALANCE · REFINE",
+    name: "THE BARRIER RITUAL",
+    eyebrow: "CLEANSE · HYDRATE · REPAIR",
     description:
       "A targeted pairing created for skin prone to excess oil, congestion and blemishes.",
     image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban2.png",
@@ -38,8 +38,8 @@ const sets = [
     id: 3,
     value: "₹2,799 VALUE",
     save: "SAVE 14%",
-    name: "THE RADIANCE RITUAL",
-    eyebrow: "GLOW · NOURISH · REVEAL",
+    name: "THE CLARITY RITUAL",
+    eyebrow: "CLEANSE · CLARIFY · PROTECT",
     description:
       "A gentle ritual designed to refresh the complexion and bring out its natural luminosity.",
     image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban3.jpg",
@@ -53,8 +53,8 @@ const sets = [
     id: 4,
     value: "₹3,499 VALUE",
     save: "SAVE 18%",
-    name: "THE RENEWAL RITUAL",
-    eyebrow: "RENEW · FIRM · NOURISH",
+    name: "THE RADIANCE RITUAL",
+    eyebrow: "CLEANSE · BRIGHTEN · PROTECT",
     description:
       "An evening-focused ritual for smoother, firmer-looking and well-nourished skin.",
     image: "https://res.cloudinary.com/dr1jqpozn/image/upload/v1788681685/ban1.jpg",
